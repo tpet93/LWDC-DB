@@ -87,6 +87,8 @@
           "offset":0
         }
       ],
+      "Label": "TuckerBox Temperature Sensor",
+      "Comment": "Temperature and Humidity Sensor",
       "Version": "0.1"
     },
     "IOTWeatherStn": {
@@ -188,9 +190,11 @@
           "offset":0
         }
       ],
+      "Label": "IOT Australasia Weather Station",
+      "Comment": "Low Power: Temperature, Wind, Rain, Barometer.",
       "Version": "0.1"
     }
   },
-  "Version": "0.03",
+  "Version": "0.04",
   "Date": "27/07/2017"
 }
