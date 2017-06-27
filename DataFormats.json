@@ -1,0 +1,153 @@
+{
+  "DataFormats": [
+    {},
+    {
+      "Fields": [
+        {
+          "Label": "header",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "temp",
+          "DecodeString": "x = (x * 175.72/65536) - 46.85",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 2
+        },
+        {
+          "Label": "humidity",
+          "DecodeString": "x = (x * 125/255) - 6",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 1
+        },
+        {
+          "Label": "period",
+          "DecodeString": "x = x * 2",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "rssi",
+          "DecodeString": "x = x -180",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "snr",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x + 150) * 0.01",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 2
+        }
+      ],
+      "Model": "RHF1S001",
+      "Version": "0.1"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 3
+        },
+        {
+          "Label": "windspeed",
+          "DecodeString": "x = ((x>>19) & 0x1FFF) /10 ",
+          "DataType": "UInt32LE",
+          "DataLength": 4,
+          "IncrementLength": 0,
+          "DecimalPlaces": 1
+        },
+        {
+          "Label": "windgust",
+          "DecodeString": "x = ((x>>6) & 0x1FFF) /10 ",
+          "DataType": "UInt32LE",
+          "DataLength": 4,
+          "IncrementLength": 0,
+          "DecimalPlaces": 1
+        },
+        {
+          "Label": "winddir",
+          "DecodeString": "x = (x & 0x3F)/8",
+          "DataType": "UInt32LE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 3
+        },
+        {
+          "Label": "rainmm",
+          "DecodeString": "",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 1
+        },
+        {
+          "Label": "temp",
+          "DecodeString": "x = ((x * 64.0) / 256.0) - 10 ",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 2
+        },
+        {
+          "Label": "pressure",
+          "DecodeString": "x = (x * 256.0/65536.0) + 800",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 4
+        }
+      ],
+      "Model": "IOTWeatherStn",
+      "Version": "0.1"
+    }
+  ],
+  "Version": "0.03",
+  "Date": "27/07/2017"
+}
