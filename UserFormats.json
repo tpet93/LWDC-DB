@@ -10,17 +10,21 @@
           "short": "Temp",
           "unit": "Degrees Celsius",
           "ushort": "°C",
-          "comment": ""
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "temp",
           "display": 1,
-          "format": "0",
+          "format": "0.00",
           "name": "Temperature",
           "short": "Temp",
           "unit": "Degrees Celsius",
           "ushort": "°C",
-          "comment": ""
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "humidity",
@@ -30,7 +34,9 @@
           "short": "Humidity",
           "unit": "Percent",
           "ushort": "%",
-          "comment": ""
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "period",
@@ -40,7 +46,9 @@
           "short": "Period",
           "unit": "Seconds",
           "ushort": "S",
-          "comment": ""
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "rssi",
@@ -50,7 +58,9 @@
           "format": "0.0",
           "unit": "",
           "ushort": "",
-          "comment": "not valid value"
+          "comment": "not valid value",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "snr",
@@ -60,7 +70,9 @@
           "format": "0.0",
           "unit": "",
           "ushort": "",
-          "comment": "not valid value"
+          "comment": "not valid value",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "battery",
@@ -70,7 +82,9 @@
           "short": "Battery",
           "unit": "Volts",
           "ushort": "V",
-          "comment": ""
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         }
       ],
       "Version": "0.1"
@@ -79,73 +93,104 @@
       "Fields": [
         {
           "Label": "formatid",
-          "DecodeString": "",
-          "DataType": "UInt8",
-          "DataLength": 1,
-          "IncrementLength": 1,
-          "DecimalPlaces": 0
+          "display": 0,
+          "format": "",
+          "name": "formatid",
+          "short": "formatid",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "battery",
-          "DecodeString": "x = (x * 2 / 256) + 2.5",
-          "DataType": "UInt8",
-          "DataLength": 1,
-          "IncrementLength": 1,
-          "DecimalPlaces": 3
+          "display": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "windspeed",
-          "DecodeString": "x = ((x>>19) & 0x1FFF) /10 ",
-          "DataType": "UInt32LE",
-          "DataLength": 4,
-          "IncrementLength": 0,
-          "DecimalPlaces": 1
+          "display": 1,
+          "format": "0.0",
+          "name": "Wind Speed",
+          "short": "Wind",
+          "unit": "meters per second",
+          "ushort": "m/s",
+          "comment": "Averaged over uplink period",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "windgust",
-          "DecodeString": "x = ((x>>6) & 0x1FFF) /10 ",
-          "DataType": "UInt32LE",
-          "DataLength": 4,
-          "IncrementLength": 0,
-          "DecimalPlaces": 1
+          "display": 1,
+          "format": "0.0",
+          "name": "Wind Gust",
+          "short": "Gust",
+          "unit": "meters per second",
+          "ushort": "m/s",
+          "comment": "Highest one minute average",
+          "multiplier":1,
+          "offset":0
         },
         {
-          "Label": "winddir",
-          "DecodeString": "x = (x & 0x3F)/8",
-          "DataType": "UInt32LE",
-          "DataLength": 4,
-          "IncrementLength": 4,
-          "DecimalPlaces": 3
+          "Label": "windgust",
+          "display": 1,
+          "format": "0",
+          "name": "Wind Heading",
+          "short": "Heading",
+          "unit": "",
+          "ushort": "",
+          "comment": "Degrees/45 from north clockwise 0-7.99",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "rainmm",
-          "DecodeString": "",
-          "DataType": "UInt16LE",
-          "DataLength": 2,
-          "IncrementLength": 2,
-          "DecimalPlaces": 1
+          "display": 1,
+          "format": "0.0",
+          "name": "Rainfall",
+          "short": "Rain",
+          "unit": "millimeters",
+          "ushort": "mm",
+          "comment": "rainfall since last uplink",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "temp",
-          "DecodeString": "x = ((x * 64.0) / 256.0) - 10 ",
-          "DataType": "UInt8",
-          "DataLength": 1,
-          "IncrementLength": 1,
-          "DecimalPlaces": 2
+          "display": 1,
+          "format": "0.00",
+          "name": "Temperature",
+          "short": "Temp",
+          "unit": "Degrees Celsius",
+          "ushort": "°C",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         },
         {
           "Label": "pressure",
-          "DecodeString": "x = (x * 256.0/65536.0) + 800",
-          "DataType": "UInt16LE",
-          "DataLength": 2,
-          "IncrementLength": 2,
-          "DecimalPlaces": 4
+          "display": 1,
+          "format": "0",
+          "name": "Air Pressure",
+          "short": "Pressure",
+          "unit": " millibar",
+          "ushort": "mbar",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         }
       ],
-      "Model": "IOTWeatherStn",
       "Version": "0.1"
     }
   },
-  "Version": "0.02",
-  "Date": "21/07/2017"
+  "Version": "0.03",
+  "Date": "27/07/2017"
 }
