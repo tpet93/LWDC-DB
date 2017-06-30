@@ -17,7 +17,7 @@
         {
           "Label": "temp",
           "display": 1,
-          "format": "0.00",
+          "format": "0.0",
           "name": "Temperature",
           "short": "Temp",
           "unit": "Degrees Celsius",
@@ -149,7 +149,7 @@
           "short": "Heading",
           "unit": "",
           "ushort": "",
-          "comment": "Degrees/45 from north clockwise 0-7.99",
+          "comment": "Degrees from north clockwise ",
           "multiplier":1,
           "offset":0
         },
@@ -247,12 +247,12 @@
         {
           "Label": "winddir",
           "display": 1,
-          "format": "0.0",
+          "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
           "unit": "",
           "ushort": "",
-          "comment": "Degrees/45 from north clockwise 0-7.99",
+          "comment": "Degrees from north clockwise 0",
           "multiplier":1,
           "offset":0
         },
