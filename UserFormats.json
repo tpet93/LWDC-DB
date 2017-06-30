@@ -142,7 +142,7 @@
           "offset":0
         },
         {
-          "Label": "windgust",
+          "Label": "winddir",
           "display": 1,
           "format": "0",
           "name": "Wind Heading",
@@ -180,7 +180,7 @@
         {
           "Label": "pressure",
           "display": 1,
-          "format": "0",
+          "format": "0.0",
           "name": "Air Pressure",
           "short": "Pressure",
           "unit": " millibar",
@@ -193,8 +193,111 @@
       "Label": "IOT Australasia Weather Station",
       "Comment": "Low Power: Temperature, Wind, Rain, Barometer.",
       "Version": "0.1"
+    },
+    "USWeatherStn": {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "display": 0,
+          "format": "",
+          "name": "formatid",
+          "short": "formatid",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "battery",
+          "display": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "windspeed",
+          "display": 1,
+          "format": "0.0",
+          "name": "Wind Speed",
+          "short": "Wind",
+          "unit": "meters per second",
+          "ushort": "m/s",
+          "comment": "Averaged over uplink period",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "windgust",
+          "display": 1,
+          "format": "0.0",
+          "name": "Wind Gust",
+          "short": "Gust",
+          "unit": "meters per second",
+          "ushort": "m/s",
+          "comment": "Highest one second average",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "winddir",
+          "display": 1,
+          "format": "0.0",
+          "name": "Wind Heading",
+          "short": "Heading",
+          "unit": "",
+          "ushort": "",
+          "comment": "Degrees/45 from north clockwise 0-7.99",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "humidity",
+          "display": 1,
+          "format": "0.0",
+          "name": "Humidity",
+          "short": "RH",
+          "unit": "Percent",
+          "ushort": "%",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "temp",
+          "display": 1,
+          "format": "0.00",
+          "name": "Temperature",
+          "short": "Temp",
+          "unit": "Degrees Celsius",
+          "ushort": "°C",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
+        },
+        {
+          "Label": "pressure",
+          "display": 1,
+          "format": "0.0",
+          "name": "Air Pressure",
+          "short": "Pressure",
+          "unit": " millibar",
+          "ushort": "mbar",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
+        }
+      ],
+      "Label": "Ultrasonic Weather Station",
+      "Comment": "Temperature, Wind, Humidity, Barometer.",
+      "Version": "0.1"
     }
   },
-  "Version": "0.04",
-  "Date": "27/07/2017"
+  "Version": "0.05",
+  "Date": "30/07/2017"
 }
