@@ -97,19 +97,19 @@
         },
         {
           "Label": "windspeed",
-          "DecodeString": "x = ((x>>19) & 0x1FFF) /10 ",
+          "DecodeString": "x = ((x>>19) & 0x1FFF) /100 ",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 0,
-          "DecimalPlaces": 1
+          "DecimalPlaces": 2
         },
         {
           "Label": "windgust",
-          "DecodeString": "x = ((x>>6) & 0x1FFF) /10 ",
+          "DecodeString": "x = ((x>>6) & 0x1FFF) /100 ",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 0,
-          "DecimalPlaces": 1
+          "DecimalPlaces": 2
         },
         {
           "Label": "winddir",
