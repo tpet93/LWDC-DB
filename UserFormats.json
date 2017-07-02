@@ -3,7 +3,7 @@
     "RHF1S001": {
       "Fields": [
         {
-          "Label": "header",
+          "Label": "decoded.header",
           "display": 0,
           "format": "0",
           "name": "Temperature",
@@ -15,7 +15,7 @@
           "offset":0
         },
         {
-          "Label": "temp",
+          "Label": "decoded.temp",
           "display": 1,
           "format": "0.0",
           "name": "Temperature",
@@ -27,7 +27,7 @@
           "offset":0
         },
         {
-          "Label": "humidity",
+          "Label": "decoded.humidity",
           "display": 1,
           "format": "0",
           "name": "Relative Humidity",
@@ -39,7 +39,7 @@
           "offset":0
         },
         {
-          "Label": "period",
+          "Label": "decoded.period",
           "display": 0,
           "format": "0",
           "name": "Report Period",
@@ -51,7 +51,7 @@
           "offset":0
         },
         {
-          "Label": "rssi",
+          "Label": "decoded.rssi",
           "display": 0,
           "name": "rssi",
           "short": "rssi",
@@ -63,7 +63,7 @@
           "offset":0
         },
         {
-          "Label": "snr",
+          "Label": "decoded.snr",
           "display": 0,
           "name": "snr",
           "short": "snr",
@@ -75,7 +75,7 @@
           "offset":0
         },
         {
-          "Label": "battery",
+          "Label": "decoded.battery",
           "display": 1,
           "format": "0.00",
           "name": "Battery Voltage",
@@ -94,7 +94,7 @@
     "IOTWeatherStn": {
       "Fields": [
         {
-          "Label": "formatid",
+          "Label": "decoded.formatid",
           "display": 0,
           "format": "",
           "name": "formatid",
@@ -106,7 +106,7 @@
           "offset":0
         },
         {
-          "Label": "battery",
+          "Label": "decoded.battery",
           "display": 1,
           "format": "0.00",
           "name": "Battery Voltage",
@@ -118,7 +118,7 @@
           "offset":0
         },
         {
-          "Label": "windspeed",
+          "Label": "decoded.windspeed",
           "display": 1,
           "format": "0.0",
           "name": "Wind Speed",
@@ -130,7 +130,7 @@
           "offset":0
         },
         {
-          "Label": "windgust",
+          "Label": "decoded.windgust",
           "display": 1,
           "format": "0.0",
           "name": "Wind Gust",
@@ -142,7 +142,7 @@
           "offset":0
         },
         {
-          "Label": "winddir",
+          "Label": "decoded.winddir",
           "display": 1,
           "format": "0",
           "name": "Wind Heading",
@@ -154,7 +154,7 @@
           "offset":0
         },
         {
-          "Label": "rainmm",
+          "Label": "decoded.rainmm",
           "display": 1,
           "format": "0.0",
           "name": "Rainfall",
@@ -166,7 +166,7 @@
           "offset":0
         },
         {
-          "Label": "temp",
+          "Label": "decoded.temp",
           "display": 1,
           "format": "0.00",
           "name": "Temperature",
@@ -178,7 +178,7 @@
           "offset":0
         },
         {
-          "Label": "pressure",
+          "Label": "decoded.pressure",
           "display": 1,
           "format": "0.0",
           "name": "Air Pressure",
@@ -197,7 +197,7 @@
     "USWeatherStn": {
       "Fields": [
         {
-          "Label": "formatid",
+          "Label": "decoded.formatid",
           "display": 0,
           "format": "",
           "name": "formatid",
@@ -209,7 +209,7 @@
           "offset":0
         },
         {
-          "Label": "battery",
+          "Label": "decoded.battery",
           "display": 1,
           "format": "0.00",
           "name": "Battery Voltage",
@@ -221,7 +221,7 @@
           "offset":0
         },
         {
-          "Label": "windspeed",
+          "Label": "decoded.windspeed",
           "display": 1,
           "format": "0.0",
           "name": "Wind Speed",
@@ -233,7 +233,7 @@
           "offset":0
         },
         {
-          "Label": "windgust",
+          "Label": "decoded.windgust",
           "display": 1,
           "format": "0.0",
           "name": "Wind Gust",
@@ -245,7 +245,7 @@
           "offset":0
         },
         {
-          "Label": "winddir",
+          "Label": "decoded.winddir",
           "display": 1,
           "format": "0",
           "name": "Wind Heading",
@@ -257,7 +257,7 @@
           "offset":0
         },
         {
-          "Label": "humidity",
+          "Label": "decoded.humidity",
           "display": 1,
           "format": "0.0",
           "name": "Humidity",
@@ -269,7 +269,7 @@
           "offset":0
         },
         {
-          "Label": "temp",
+          "Label": "decoded.temp",
           "display": 1,
           "format": "0.00",
           "name": "Temperature",
@@ -281,7 +281,7 @@
           "offset":0
         },
         {
-          "Label": "pressure",
+          "Label": "decoded.pressure",
           "display": 1,
           "format": "0.0",
           "name": "Air Pressure",
@@ -298,6 +298,6 @@
       "Version": "0.1"
     }
   },
-  "Version": "0.05",
-  "Date": "30/07/2017"
+  "Version": "0.06",
+  "Date": "2/07/2017"
 }
