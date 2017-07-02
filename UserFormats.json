@@ -168,7 +168,7 @@
         {
           "path": "decoded.rainmm",
           "display": 1,
-          "aggregate": 1,
+          "aggregate": 0,
           "format": "0.0",
           "name": "Rainfall",
           "short": "Rain",
@@ -212,7 +212,7 @@
           "name": "port",
           "short": "",
           "unit": " ",
-          "ushort": "mbar",
+          "ushort": "",
           "comment": "",
           "multiplier":1,
           "offset":0
@@ -227,7 +227,7 @@
         {
           "path": "decoded.formatid",
           "display": 0,
-          "aggregate": 1,
+          "aggregate": 0,
           "format": "",
           "name": "formatid",
           "short": "formatid",
@@ -279,7 +279,7 @@
         {
           "path": "decoded.winddir",
           "display": 1,
-          "aggregate": 1,
+          "aggregate": 0,
           "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
@@ -327,6 +327,19 @@
           "comment": "",
           "multiplier":1,
           "offset":0
+        },
+        {
+          "path": "gwdata.fport",
+          "display": 0,
+          "aggregate": 1,
+          "format": "0",
+          "name": "port",
+          "short": "",
+          "unit": " ",
+          "ushort": "",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         }
       ],
       "label": "Ultrasonic Weather Station",
@@ -334,6 +347,6 @@
       "version": "0.1"
     }
   },
-  "version": "0.07",
+  "version": "0.08",
   "date": "2/07/2017"
 }
