@@ -1,10 +1,11 @@
 {
-  "Models": {
+  "models": {
     "RHF1S001": {
-      "Fields": [
+      "fields": [
         {
-          "Label": "decoded.header",
+          "path": "decoded.header",
           "display": 0,
+          "aggregate": 0,
           "format": "0",
           "name": "Temperature",
           "short": "Temp",
@@ -15,8 +16,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.temp",
+          "path": "decoded.temp",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Temperature",
           "short": "Temp",
@@ -27,8 +29,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.humidity",
+          "path": "decoded.humidity",
           "display": 1,
+          "aggregate": 1,
           "format": "0",
           "name": "Relative Humidity",
           "short": "Humidity",
@@ -39,8 +42,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.period",
+          "path": "decoded.period",
           "display": 0,
+          "aggregate": 0,
           "format": "0",
           "name": "Report Period",
           "short": "Period",
@@ -51,11 +55,12 @@
           "offset":0
         },
         {
-          "Label": "decoded.rssi",
+          "path": "decoded.rssi",
           "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
           "name": "rssi",
           "short": "rssi",
-          "format": "0.0",
           "unit": "",
           "ushort": "",
           "comment": "not valid value",
@@ -63,11 +68,12 @@
           "offset":0
         },
         {
-          "Label": "decoded.snr",
+          "path": "decoded.snr",
           "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
           "name": "snr",
           "short": "snr",
-          "format": "0.0",
           "unit": "",
           "ushort": "",
           "comment": "not valid value",
@@ -75,8 +81,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.battery",
+          "path": "decoded.battery",
           "display": 1,
+          "aggregate": 1,
           "format": "0.00",
           "name": "Battery Voltage",
           "short": "Battery",
@@ -87,15 +94,16 @@
           "offset":0
         }
       ],
-      "Label": "TuckerBox Temperature Sensor",
-      "Comment": "Temperature and Humidity Sensor",
-      "Version": "0.1"
+      "label": "TuckerBox Temperature Sensor",
+      "commment": "Temperature and Humidity Sensor",
+      "version": "0.1"
     },
     "IOTWeatherStn": {
-      "Fields": [
+      "fields": [
         {
-          "Label": "decoded.formatid",
+          "path": "decoded.formatid",
           "display": 0,
+          "aggregate": 0,
           "format": "",
           "name": "formatid",
           "short": "formatid",
@@ -106,8 +114,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.battery",
+          "path": "decoded.battery",
           "display": 1,
+          "aggregate": 1,
           "format": "0.00",
           "name": "Battery Voltage",
           "short": "Battery",
@@ -118,8 +127,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.windspeed",
+          "path": "decoded.windspeed",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Wind Speed",
           "short": "Wind",
@@ -130,8 +140,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.windgust",
+          "path": "decoded.windgust",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Wind Gust",
           "short": "Gust",
@@ -142,8 +153,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.winddir",
+          "path": "decoded.winddir",
           "display": 1,
+          "aggregate": 1,
           "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
@@ -154,8 +166,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.rainmm",
+          "path": "decoded.rainmm",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Rainfall",
           "short": "Rain",
@@ -166,8 +179,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.temp",
+          "path": "decoded.temp",
           "display": 1,
+          "aggregate": 1,
           "format": "0.00",
           "name": "Temperature",
           "short": "Temp",
@@ -178,8 +192,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.pressure",
+          "path": "decoded.pressure",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Air Pressure",
           "short": "Pressure",
@@ -188,17 +203,31 @@
           "comment": "",
           "multiplier":1,
           "offset":0
+        },
+        {
+          "path": "gwdata.fport",
+          "display": 0,
+          "aggregate": 1,
+          "format": "0",
+          "name": "port",
+          "short": "",
+          "unit": " ",
+          "ushort": "mbar",
+          "comment": "",
+          "multiplier":1,
+          "offset":0
         }
       ],
-      "Label": "IOT Australasia Weather Station",
-      "Comment": "Low Power: Temperature, Wind, Rain, Barometer.",
-      "Version": "0.1"
+      "label": "IOT Australasia Weather Station",
+      "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
+      "version": "0.1"
     },
     "USWeatherStn": {
-      "Fields": [
+      "fields": [
         {
-          "Label": "decoded.formatid",
+          "path": "decoded.formatid",
           "display": 0,
+          "aggregate": 1,
           "format": "",
           "name": "formatid",
           "short": "formatid",
@@ -209,8 +238,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.battery",
+          "path": "decoded.battery",
           "display": 1,
+          "aggregate": 1,
           "format": "0.00",
           "name": "Battery Voltage",
           "short": "Battery",
@@ -221,8 +251,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.windspeed",
+          "path": "decoded.windspeed",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Wind Speed",
           "short": "Wind",
@@ -233,8 +264,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.windgust",
+          "path": "decoded.windgust",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Wind Gust",
           "short": "Gust",
@@ -245,8 +277,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.winddir",
+          "path": "decoded.winddir",
           "display": 1,
+          "aggregate": 1,
           "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
@@ -257,8 +290,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.humidity",
+          "path": "decoded.humidity",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Humidity",
           "short": "RH",
@@ -269,8 +303,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.temp",
+          "path": "decoded.temp",
           "display": 1,
+          "aggregate": 1,
           "format": "0.00",
           "name": "Temperature",
           "short": "Temp",
@@ -281,8 +316,9 @@
           "offset":0
         },
         {
-          "Label": "decoded.pressure",
+          "path": "decoded.pressure",
           "display": 1,
+          "aggregate": 1,
           "format": "0.0",
           "name": "Air Pressure",
           "short": "Pressure",
@@ -293,11 +329,11 @@
           "offset":0
         }
       ],
-      "Label": "Ultrasonic Weather Station",
-      "Comment": "Temperature, Wind, Humidity, Barometer.",
-      "Version": "0.1"
+      "label": "Ultrasonic Weather Station",
+      "comment": "Temperature, Wind, Humidity, Barometer.",
+      "version": "0.1"
     }
   },
-  "Version": "0.06",
-  "Date": "2/07/2017"
+  "version": "0.07",
+  "date": "2/07/2017"
 }
