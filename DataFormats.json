@@ -242,7 +242,7 @@
           "DataLength": 2,
           "IncrementLength": 2,
           "DecimalPlaces": 3
-        },
+        }
       ],
       "Model": "SeametricsFlowGuage",
       "Version": "0.1"
