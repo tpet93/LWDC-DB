@@ -216,8 +216,38 @@
       ],
       "Model": "USWeatherStn",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 16 / 256) + 8",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "flowrate",
+          "DecodeString": "x = x /1000 ",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 3
+        }
+      ],
+      "Model": "SeametricsFlowGuage",
+      "Version": "0.1"
     }
   ],
-  "Version": "0.05",
-  "Date": "30/07/2017"
+  "Version": "0.06",
+  "Date": "4/07/2017"
 }
