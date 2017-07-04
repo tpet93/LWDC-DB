@@ -122,14 +122,14 @@
         {
           "Label": "rainmm",
           "DecodeString": "",
-          "DataType": "UInt8",
+          "DataType": "UInt16LE",
           "DataLength": 1,
           "IncrementLength": 1,
           "DecimalPlaces": 1
         },
         {
           "Label": "temp",
-          "DecodeString": "x = ((x * 64.0) / 256.0) - 10 ",
+          "DecodeString": "x = ((x * 256.0) / 65536.0) - 127 ",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -191,11 +191,11 @@
         },
         {
           "Label": "temp",
-          "DecodeString": "x = ((x * 64.0) / 256.0) - 10 ",
-          "DataType": "UInt8",
-          "DataLength": 1,
-          "IncrementLength": 1,
-          "DecimalPlaces": 2
+          "DecodeString": "x = ((x * 256.0) / 65536.0) - 127 ",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 3
         },
         {
           "Label": "humidity",
