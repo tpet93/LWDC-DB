@@ -199,7 +199,7 @@
     },
     "USWeatherStn": {
       "fields": [
-        
+
         {
           "path": "decoded.battery",
           "display": 1,
@@ -310,6 +310,6 @@
       "version": "0.1"
     }
   },
-  "version": "0.08",
-  "date": "2/07/2017"
+  "version": "0.09",
+  "date": "07/07/2017"
 }
