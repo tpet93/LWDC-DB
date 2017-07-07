@@ -3,19 +3,6 @@
     "RHF1S001": {
       "fields": [
         {
-          "path": "decoded.header",
-          "display": 0,
-          "aggregate": 0,
-          "format": "0",
-          "name": "Temperature",
-          "short": "Temp",
-          "unit": "Degrees Celsius",
-          "ushort": "°C",
-          "comment": "",
-          "multiplier":1,
-          "offset":0
-        },
-        {
           "path": "decoded.temp",
           "display": 1,
           "aggregate": 1,
@@ -100,19 +87,7 @@
     },
     "IOTWeatherStn": {
       "fields": [
-        {
-          "path": "decoded.formatid",
-          "display": 0,
-          "aggregate": 0,
-          "format": "",
-          "name": "formatid",
-          "short": "formatid",
-          "unit": "",
-          "ushort": "",
-          "comment": "",
-          "multiplier":1,
-          "offset":0
-        },
+
         {
           "path": "decoded.battery",
           "display": 1,
@@ -224,19 +199,7 @@
     },
     "USWeatherStn": {
       "fields": [
-        {
-          "path": "decoded.formatid",
-          "display": 0,
-          "aggregate": 0,
-          "format": "",
-          "name": "formatid",
-          "short": "formatid",
-          "unit": "",
-          "ushort": "",
-          "comment": "",
-          "multiplier":1,
-          "offset":0
-        },
+        
         {
           "path": "decoded.battery",
           "display": 1,
