@@ -132,7 +132,7 @@
           "DecodeString": "x = ((x * 256.0) / 65536.0) - 127 ",
           "DataType": "UInt16LE",
           "DataLength": 2,
-          "IncrementLength": 2,
+          "IncrementLength": 3,
           "DecimalPlaces": 3
         },
         {
