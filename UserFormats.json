@@ -46,11 +46,11 @@
           "display": 0,
           "aggregate": 0,
           "format": "0.0",
-          "name": "rssi",
+          "name": “RSSI”,
           "short": "rssi",
-          "unit": "",
-          "ushort": "",
-          "comment": "not valid value",
+          "unit": "dB",
+          "ushort": "dB",
+          "comment": "Received Signal Strength Indicator",
           "multiplier":1,
           "offset":0
         },
@@ -61,8 +61,8 @@
           "format": "0.0",
           "name": "snr",
           "short": "snr",
-          "unit": "",
-          "ushort": "",
+          "unit": "dB",
+          "ushort": "dB",
           "comment": "not valid value",
           "multiplier":1,
           "offset":0
@@ -134,8 +134,8 @@
           "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
-          "unit": "",
-          "ushort": "",
+          "unit": "Degrees",
+          "ushort": "°",
           "comment": "Degrees from north clockwise ",
           "multiplier":1,
           "offset":0
@@ -246,8 +246,8 @@
           "format": "0",
           "name": "Wind Heading",
           "short": "Heading",
-          "unit": "",
-          "ushort": "",
+          "unit": "Degrees",
+          "ushort": "°",
           "comment": "Degrees from north clockwise 0",
           "multiplier":1,
           "offset":0
@@ -310,6 +310,6 @@
       "version": "0.1"
     }
   },
-  "version": "0.09",
-  "date": "07/07/2017"
+  "version": “0.10”,
+  "date": "08/07/2017"
 }
