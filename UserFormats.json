@@ -46,11 +46,11 @@
           "display": 0,
           "aggregate": 0,
           "format": "0.0",
-          "name": “RSSI”,
-          "short": "rssi",
+          "name": “Received Signal Strength Indicator”,
+          "short": "RSSI",
           "unit": "dB",
           "ushort": "dB",
-          "comment": "Received Signal Strength Indicator",
+          "comment": "not valid value",
           "multiplier":1,
           "offset":0
         },
@@ -59,8 +59,8 @@
           "display": 0,
           "aggregate": 0,
           "format": "0.0",
-          "name": "snr",
-          "short": "snr",
+          "name": "Signal-to-noise ratio",
+          "short": "SNR",
           "unit": "dB",
           "ushort": "dB",
           "comment": "not valid value",
@@ -83,7 +83,7 @@
       ],
       "label": "TuckerBox Temperature Sensor",
       "commment": "Temperature and Humidity Sensor",
-      "version": "0.1"
+      "version": "0.2"
     },
     "IOTWeatherStn": {
       "fields": [
@@ -173,8 +173,8 @@
           "format": "0.0",
           "name": "Air Pressure",
           "short": "Pressure",
-          "unit": " millibar",
-          "ushort": "mbar",
+          "unit": " hectopascal",
+          "ushort": "hPa",
           "comment": "",
           "multiplier":1,
           "offset":0
@@ -195,7 +195,7 @@
       ],
       "label": "IOT Australasia Weather Station",
       "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
-      "version": "0.1"
+      "version": "0.2"
     },
     "USWeatherStn": {
       "fields": [
@@ -285,8 +285,8 @@
           "format": "0.0",
           "name": "Air Pressure",
           "short": "Pressure",
-          "unit": " millibar",
-          "ushort": "mbar",
+          "unit": " hectopascal",
+          "ushort": "hPa",
           "comment": "",
           "multiplier":1,
           "offset":0
@@ -307,9 +307,9 @@
       ],
       "label": "Ultrasonic Weather Station",
       "comment": "Temperature, Wind, Humidity, Barometer.",
-      "version": "0.1"
+      "version": "0.2"
     }
   },
   "version": “0.10”,
-  "date": "08/07/2017"
+  "date": "10/07/2017"
 }
