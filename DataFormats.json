@@ -125,7 +125,7 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 1
+          "DecimalPlaces": 2
         },
         {
           "Label": "lastresetcause",
