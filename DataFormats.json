@@ -129,7 +129,7 @@
         },
         {
           "Label": "lastresetcause",
-          "DecodeString": "x = x & 0x8000",
+          "DecodeString": "x = (x & 0x8000) >> 15",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
