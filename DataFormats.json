@@ -105,7 +105,7 @@
         },
         {
           "Label": "windgust",
-          "DecodeString": "x = ((x>>6) & 0x1FFF) /100 ",
+          "DecodeString": "x = ((x>>6) & 0x1FFF) /100; (x>0) ? x = (x * 0.5316) + 0.2125 ;",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 0,
