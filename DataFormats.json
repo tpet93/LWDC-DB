@@ -121,11 +121,19 @@
         },
         {
           "Label": "rainmm",
-          "DecodeString": "",
+          "DecodeString": "x = x & ~0x8000",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 1
+        },
+        {
+          "Label": "lastresetcause",
+          "DecodeString": "x = (x & 0x8000) >> 15",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
-          "DecimalPlaces": 1
+          "DecimalPlaces": 0
         },
         {
           "Label": "temp",
