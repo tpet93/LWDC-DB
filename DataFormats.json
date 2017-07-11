@@ -113,7 +113,7 @@
         },
         {
           "Label": "winddir",
-          "DecodeString": "x = ((x & 0x3F)/64) * 360 ",
+          "DecodeString": "x = ((((x & 0x3F)/64) * 360 ) + 90) % 360",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 4,
@@ -121,7 +121,7 @@
         },
         {
           "Label": "rainmm",
-          "DecodeString": "x = x & ~0x8000",
+          "DecodeString": "x = x & ~0x8000; x = x * 0.29",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
