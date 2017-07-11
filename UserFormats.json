@@ -12,8 +12,8 @@
           "unit": "Degrees Celsius",
           "ushort": "°C",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.humidity",
@@ -25,8 +25,8 @@
           "unit": "Percent",
           "ushort": "%",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.period",
@@ -38,8 +38,8 @@
           "unit": "Seconds",
           "ushort": "S",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.rssi",
@@ -51,8 +51,8 @@
           "unit": "",
           "ushort": "",
           "comment": "not valid value",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.snr",
@@ -64,8 +64,8 @@
           "unit": "",
           "ushort": "",
           "comment": "not valid value",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.battery",
@@ -77,8 +77,8 @@
           "unit": "Volts",
           "ushort": "V",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         }
       ],
       "label": "TuckerBox Temperature Sensor",
@@ -87,7 +87,6 @@
     },
     "IOTWeatherStn": {
       "fields": [
-
         {
           "path": "decoded.battery",
           "display": 1,
@@ -98,8 +97,8 @@
           "unit": "Volts",
           "ushort": "V",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.windspeed",
@@ -111,8 +110,8 @@
           "unit": "meters per second",
           "ushort": "m/s",
           "comment": "Averaged over uplink period",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.windgust",
@@ -124,8 +123,8 @@
           "unit": "meters per second",
           "ushort": "m/s",
           "comment": "Highest one minute average",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.winddir",
@@ -137,8 +136,8 @@
           "unit": "",
           "ushort": "",
           "comment": "Degrees from north clockwise ",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.rainmm",
@@ -150,8 +149,21 @@
           "unit": "millimeters",
           "ushort": "mm",
           "comment": "rainfall since last uplink",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.lastresetcause",
+          "display": 0,
+          "aggregate": 1,
+          "format": "",
+          "name": "",
+          "short": "",
+          "unit": "",
+          "ushort": "",
+          "comment": "one if device was reset by wdt",
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.temp",
@@ -163,8 +175,8 @@
           "unit": "Degrees Celsius",
           "ushort": "°C",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.pressure",
@@ -176,8 +188,8 @@
           "unit": " millibar",
           "ushort": "mbar",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "gwdata.fport",
@@ -189,17 +201,16 @@
           "unit": " ",
           "ushort": "",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         }
       ],
       "label": "IOT Australasia Weather Station",
       "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
-      "version": "0.1"
+      "version": "0.2"
     },
     "USWeatherStn": {
       "fields": [
-
         {
           "path": "decoded.battery",
           "display": 1,
@@ -210,8 +221,8 @@
           "unit": "Volts",
           "ushort": "V",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.windspeed",
@@ -223,8 +234,8 @@
           "unit": "meters per second",
           "ushort": "m/s",
           "comment": "Averaged over uplink period",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.windgust",
@@ -236,8 +247,8 @@
           "unit": "meters per second",
           "ushort": "m/s",
           "comment": "Highest one second average",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.winddir",
@@ -249,8 +260,8 @@
           "unit": "",
           "ushort": "",
           "comment": "Degrees from north clockwise 0",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.humidity",
@@ -262,8 +273,8 @@
           "unit": "Percent",
           "ushort": "%",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.temp",
@@ -275,8 +286,8 @@
           "unit": "Degrees Celsius",
           "ushort": "°C",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "decoded.pressure",
@@ -288,8 +299,8 @@
           "unit": " millibar",
           "ushort": "mbar",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         },
         {
           "path": "gwdata.fport",
@@ -301,15 +312,48 @@
           "unit": " ",
           "ushort": "",
           "comment": "",
-          "multiplier":1,
-          "offset":0
+          "multiplier": 1,
+          "offset": 0
         }
       ],
       "label": "Ultrasonic Weather Station",
       "comment": "Temperature, Wind, Humidity, Barometer.",
       "version": "0.1"
+    },
+    "SeametricsFlowGuage": {
+      "fields": [
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.flowrate",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.000",
+          "name": "FlowRate",
+          "short": "Flow",
+          "unit": " Litres per Second",
+          "ushort": "L/s",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "seametrics water flow guage",
+      "commment": "flow rate and battery of lora device",
+      "version": "0.1"
     }
   },
-  "version": "0.09",
-  "date": "07/07/2017"
+  "version": "0.10",
+  "date": "11/07/2017"
 }
