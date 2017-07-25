@@ -265,7 +265,7 @@
         },
         {
           "path": "decoded.raincumm",
-          "display": 1,
+          "display": 0,
           "aggregate": 0,
           "format": "0.0",
           "name": "Rainfall",
