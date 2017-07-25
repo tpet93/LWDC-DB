@@ -245,7 +245,7 @@
         },
         {
           "Label": "flowrate",
-          "DecodeString": "x = x /100 ", 
+          "DecodeString": "x = x /100 ",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -298,7 +298,7 @@
           "DecimalPlaces": 3
         },
         {
-          "Label": "rainmm",
+          "Label": "raincumm",
           "DecodeString": "x = x & ~0x8000; x = x * 0.29",
           "DataType": "UInt16LE",
           "DataLength": 2,
