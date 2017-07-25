@@ -245,7 +245,7 @@
         },
         {
           "Label": "flowrate",
-          "DecodeString": "x = x /1000 ",
+          "DecodeString": "x = x /100 ", 
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
