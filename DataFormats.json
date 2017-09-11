@@ -332,8 +332,46 @@
       ],
       "Model": "IOTWeatherStnCuRain",
       "Version": "0.2"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "reading",
+          "DecodeString": "x = x & ~0xC000",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "event",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "EndRowSensor0_1p",
+      "Version": "0.1"
     }
   ],
-  "Version": "0.10",
-  "Date": "25/07/2017"
+  "Version": "0.11",
+  "Date": "11/09/2017"
 }
