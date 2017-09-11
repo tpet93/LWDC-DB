@@ -489,8 +489,55 @@
       "label": "seametrics water flow guage",
       "commment": "flow rate and battery of lora device",
       "version": "0.1"
+    },
+
+    "EndRowSensor0_1p": {
+      "fields": [
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reading",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Dryness",
+          "short": "Dry",
+          "unit": "scale of 0-1023",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.event",
+          "display": 0,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Event",
+          "short": "Event",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 , no change, 1 change to wet, 2 change to dry",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "End of row sensor with one probe",
+      "commment": "0-1023, low values indicate water",
+      "version": "0.1"
     }
   },
-  "version": "0.10",
-  "date": "11/07/2017"
+  "version": "0.11",
+  "date": "11/09/2017"
 }
