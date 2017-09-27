@@ -370,8 +370,62 @@
       ],
       "Model": "EndRowSensor0_1p",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "reading1",
+          "DecodeString": "x = x & ~0xC000",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "event1",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading2",
+          "DecodeString": "x = x & ~0xC000",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "event2",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "EndRowSensor0_2p",
+      "Version": "0.1"
     }
   ],
-  "Version": "0.12",
-  "Date": "22/09/2017"
+  "Version": "0.13",
+  "Date": "27/09/2017"
 }
