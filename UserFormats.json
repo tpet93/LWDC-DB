@@ -691,7 +691,7 @@
         },
         {
           "path": "decoded.lastresetcause",
-          "display": 0,
+          "display": 1,
           "aggregate": 1,
           "format": "",
           "name": "",
@@ -730,7 +730,7 @@
         },
         {
           "path": "gwdata.fport",
-          "display": 0,
+          "display": 1,
           "aggregate": 1,
           "format": "0",
           "name": "port",
