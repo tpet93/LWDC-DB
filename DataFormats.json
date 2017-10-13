@@ -445,7 +445,7 @@
         },
         {
           "Label": "windspeed",
-          "DecodeString": "x = ((x>>19) & 0x1FFF) /100; (x>0) ? x = (x * 0.5316) + 0.2125 : x = 0 ",
+          "DecodeString": "x = ((x>>19) & 0x1FFF) /100; (x>0) ? x = (x * 0.8) + 0.0 : x = 0 ",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 0,
@@ -453,7 +453,7 @@
         },
         {
           "Label": "windgust",
-          "DecodeString": "x = ((x>>6) & 0x1FFF) /100; (x>0) ? x = (x * 0.5316) + 0.2125 : x = 0",
+          "DecodeString": "x = ((x>>6) & 0x1FFF) /100; (x>0) ? x = (x * 0.8) + 0.0 : x = 0",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 0,
