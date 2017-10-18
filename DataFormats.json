@@ -526,7 +526,47 @@
       ],
       "Model": "IOTWeatherStn2",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "nitrate",
+          "DecodeString": "x = x ",
+          "DataType": "FloatLE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "temp",
+          "DecodeString": "x = ((x * 256.0) / 65536.0) - 127 ",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 3
+        }
+
+      ],
+      "Model": "no3demo",
+      "Version": "0.1"
     }
+
   ],
   "Version": "0.14",
   "Date": "06/10/2017"
