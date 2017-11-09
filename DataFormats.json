@@ -383,7 +383,7 @@
         },
         {
           "Label": "battery",
-          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DecodeString": "x = (x * 2 / 256) + 2.0",
           "DataType": "UInt8",
           "DataLength": 1,
           "IncrementLength": 1,
