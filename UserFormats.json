@@ -567,7 +567,7 @@
         },
         {
           "path": "decoded.event1",
-          "display": 0,
+          "display": 1,
           "aggregate": 1,
           "format": "0",
           "name": "Event",
@@ -593,7 +593,7 @@
         },
         {
           "path": "decoded.event2",
-          "display": 0,
+          "display": 1,
           "aggregate": 1,
           "format": "0",
           "name": "Event",
