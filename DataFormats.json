@@ -657,7 +657,7 @@
           "DecimalPlaces": 0
         },
         {
-          "Label": "mode",
+          "Label": "uid",
           "DecodeString": "",
           "DataType": "UInt8",
           "DataLength": 1,
