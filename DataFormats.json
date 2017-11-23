@@ -625,7 +625,7 @@
           "_comment":"0 closed, 1 open, 2 middle"
         },
         {
-          "Label": "opentime0",
+          "Label": "time0",
           "DecodeString": "x = x",
           "DataType": "UInt16LE",
           "DataLength": 2,
@@ -633,7 +633,7 @@
           "DecimalPlaces": 0
         },
         {
-          "Label": "opentime1",
+          "Label": "time1",
           "DecodeString": "x = x",
           "DataType": "UInt16LE",
           "DataLength": 2,
