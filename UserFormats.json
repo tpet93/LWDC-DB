@@ -787,8 +787,133 @@
       "label": "IOT Australasia Weather Station",
       "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
       "version": "0.2"
+    },
+    "ValveControl_2v": {
+      "fields": [
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.windspeed",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.0",
+          "name": "Wind Speed",
+          "short": "Wind",
+          "unit": "meters per second",
+          "ushort": "m/s",
+          "comment": "Averaged over uplink period",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.setting0",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.setting1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state0",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.time0",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "seconds",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.time0",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "seconds",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.uid",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "",
+          "short": "",
+          "unit": "seconds",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        }
+
+      ],
+      "label": "IOT Australasia Dual actuator control board",
+      "comment": "",
+      "version": "0.1"
     }
   },
   "version": "0.12",
-  "date": "27/09/2017"
+  "date": "23/11/2017"
 }
