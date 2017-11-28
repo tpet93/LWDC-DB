@@ -701,7 +701,8 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
         },
         {
           "Label": "event1",
@@ -725,7 +726,9 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+
         },
         {
           "Label": "event2",
@@ -771,7 +774,8 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
         },
         {
           "Label": "event1",
@@ -795,7 +799,8 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
         },
         {
           "Label": "event2",
@@ -819,7 +824,8 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
         },
         {
           "Label": "event3",
@@ -843,7 +849,8 @@
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
-          "DecimalPlaces": 0
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
         },
         {
           "Label": "event4",
