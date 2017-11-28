@@ -700,7 +700,7 @@
           "DecodeString": "x = (x & 0x3000) >> 12",
           "DataType": "UInt16LE",
           "DataLength": 2,
-          "IncrementLength": 2,
+          "IncrementLength": 0,
           "DecimalPlaces": 0
         },
         {
@@ -724,7 +724,7 @@
           "DecodeString": "x = (x & 0x3000) >> 12",
           "DataType": "UInt16LE",
           "DataLength": 2,
-          "IncrementLength": 2,
+          "IncrementLength": 0,
           "DecimalPlaces": 0
         },
         {
