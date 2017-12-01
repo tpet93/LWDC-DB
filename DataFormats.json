@@ -668,9 +668,204 @@
       ],
       "Model": "ValveControl_2v",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "reading1",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state1",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event1",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading2",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state2",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+
+        },
+        {
+          "Label": "event2",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "EndRowSensor1_2p",
+      "Version": "0.2"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "reading1",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state1",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event1",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading2",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state2",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event2",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading3",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state3",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event3",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading4",
+          "DecodeString": "x = x & 0x03FF",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "state4",
+          "DecodeString": "x = (x & 0x3000) >> 12",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event4",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "EndRowSensor1_4p",
+      "Version": "0.2"
     }
 
   ],
   "Version": "0.15",
-  "Date": "16/11/2017"
+  "Date": "28/11/2017"
 }
