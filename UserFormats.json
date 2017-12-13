@@ -608,8 +608,8 @@
       "label": "End of row sensor with two probes",
       "commment": "0-1023, low values indicate water",
       "version": "0.1"
-    },
-        "EndRowSensor1_2p": {
+      },
+      "EndRowSensor1_2p": {
       "fields": [
         {
           "path": "decoded.battery",
@@ -634,6 +634,19 @@
           "unit": "scale of 0-1023",
           "ushort": "",
           "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
           "multiplier": 1,
           "offset": 0
         },
@@ -664,6 +677,19 @@
           "offset": 0
         },
         {
+          "path": "decoded.state2",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
           "path": "decoded.event2",
           "display": 1,
           "aggregate": 1,
@@ -677,10 +703,187 @@
           "offset": 0
         }
       ],
-      "label": "End of row sensor with two probes, enhanced",
+      "label": "End of row sensor with two probes",
       "commment": "0-1023, low values indicate water",
       "version": "0.2"
     },
+      "EndRowSensor1_4p": {
+      "fields": [
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reading1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Dryness",
+          "short": "Dry",
+          "unit": "scale of 0-1023",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.event1",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Event",
+          "short": "Event",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 , no change, 1 change to wet, 2 change to dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reading2",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Dryness",
+          "short": "Dry",
+          "unit": "scale of 0-1023",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state2",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.event2",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Event",
+          "short": "Event",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 , no change, 1 change to wet, 2 change to dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reading3",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Dryness",
+          "short": "Dry",
+          "unit": "scale of 0-1023",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state3",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.event3",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Event",
+          "short": "Event",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 , no change, 1 change to wet, 2 change to dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reading4",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Dryness",
+          "short": "Dry",
+          "unit": "scale of 0-1023",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.state4",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "State",
+          "short": "State",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 undefined, 1 wet, 2 dry",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.event4",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Event",
+          "short": "Event",
+          "unit": "",
+          "ushort": "",
+          "comment": " 0 , no change, 1 change to wet, 2 change to dry",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "End of row sensor with four probes",
+      "commment": "0-1023, low values indicate water",
+      "version": "0.2"
+    },
+    
     "IOTWeatherStn2": {
       "fields": [
         {
@@ -813,7 +1016,6 @@
           "multiplier": 1,
           "offset": 0
         },
-
         {
           "path": "decoded.humidity",
           "display": 1,
@@ -853,8 +1055,6 @@
           "multiplier": 1,
           "offset": 0
         }
-
-
       ],
       "label": "IOT Australasia Weather Station",
       "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
@@ -872,19 +1072,6 @@
           "unit": "Volts",
           "ushort": "V",
           "comment": "",
-          "multiplier": 1,
-          "offset": 0
-        },
-        {
-          "path": "decoded.windspeed",
-          "display": 1,
-          "aggregate": 1,
-          "format": "0.0",
-          "name": "Wind Speed",
-          "short": "Wind",
-          "unit": "meters per second",
-          "ushort": "m/s",
-          "comment": "Averaged over uplink period",
           "multiplier": 1,
           "offset": 0
         },
@@ -954,7 +1141,7 @@
           "offset": 0
         },
         {
-          "path": "decoded.time0",
+          "path": "decoded.time1",
           "display": 1,
           "aggregate": 1,
           "format": "0",
@@ -979,7 +1166,6 @@
           "multiplier": 1,
           "offset": 0
         }
-
       ],
       "label": "IOT Australasia Dual actuator control board",
       "comment": "",
