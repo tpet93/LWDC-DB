@@ -469,7 +469,7 @@
         },
         {
           "Label": "raincumm",
-          "DecodeString": "x = x & ~0x8000; x = x * 0.29",
+          "DecodeString": "x = x & ~0x8000; x = x * 0.30",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 0,
@@ -509,7 +509,7 @@
         },
         {
           "Label": "lux",
-          "DecodeString": "x = x",
+          "DecodeString": "x = x * 98.7",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -517,7 +517,7 @@
         },
         {
           "Label": "uv",
-          "DecodeString": "x = x",
+          "DecodeString": "x = (Math.pow(x , 2)/-102703) + (x / 38.465)",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
