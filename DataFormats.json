@@ -517,7 +517,7 @@
         },
         {
           "Label": "uv",
-          "DecodeString": "x = (Math.pow(x , 2)/-102703) + (x / 38.465)",
+          "DecodeString": "x = (Math.pow(x , 2)/-94475) + (x / 38.465)",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
