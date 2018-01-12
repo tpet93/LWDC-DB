@@ -81,7 +81,7 @@
           "offset": 0
         }
       ],
-      "label": "TuckerBox Temperature Sensor",
+      "label": "TuckerBox Temperature and Humidity Sensor",
       "commment": "Temperature and Humidity Sensor",
       "version": "0.2"
     },
