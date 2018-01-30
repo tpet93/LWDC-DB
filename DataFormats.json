@@ -984,7 +984,7 @@
         },
         {
           "Label": "time1_1",
-          "DecodeString": "x = new Date(newpayload.recv) - x * 8 * 1000;",
+          "DecodeString": "x = new Date(msg.payload.recv) - x * 8 * 1000;",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
