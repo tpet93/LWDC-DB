@@ -63,7 +63,52 @@
       "Model": "RHF1S001",
       "Version": "0.1"
     },
-    {},
+    {
+      "Fields": [
+        {
+          "Label": "isfull",
+          "DecodeString": "x = (x & 0xF0) >> 4",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "isflame",
+          "DecodeString": "x = (x & 0x0F) >> 0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "isfall",
+          "DecodeString": "x = (x & 0xF0) >> 4",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reserved",
+          "DecodeString": "x = (x & 0x0F) >> 0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "airmm",
+          "DecodeString": "x = ((x & 0xF000) >> 12) * 1000 + ((x & 0x0F00) >> 8) * 100 + ((x & 0x00F0) >> 4) * 10 + ((x & 0x000F) >> 0) * 1;",
+          "DataType": "UInt16BE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "df702",
+      "Version": "0.1"
+    },
     {},
     {},
     {},
@@ -1086,7 +1131,8 @@
       "Version": "0.2"
     }
 
+
   ],
-  "Version": "0.16",
-  "Date": "30/02/2018"
+  "Version": "0.17",
+  "Date": "31/02/2018"
 }
