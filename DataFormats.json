@@ -63,7 +63,52 @@
       "Model": "RHF1S001",
       "Version": "0.1"
     },
-    {},
+    {
+      "Fields": [
+        {
+          "Label": "isfull",
+          "DecodeString": "x = (x & 0xF0) >> 4",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "isflame",
+          "DecodeString": "x = (x & 0x0F) >> 0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "isfall",
+          "DecodeString": "x = (x & 0xF0) >> 4",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reserved",
+          "DecodeString": "x = (x & 0x0F) >> 0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "airmm",
+          "DecodeString": "x = ((x & 0xF000) >> 12) * 1000 + ((x & 0x0F00) >> 8) * 100 + ((x & 0x00F0) >> 4) * 10 + ((x & 0x000F) >> 0) * 1;",
+          "DataType": "UInt16BE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        }
+      ],
+      "Model": "df702",
+      "Version": "0.1"
+    },
     {},
     {},
     {},
@@ -984,7 +1029,7 @@
         },
         {
           "Label": "time1_1",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -992,7 +1037,7 @@
         },
         {
           "Label": "time1_2",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1000,7 +1045,7 @@
         },
         {
           "Label": "time1_3",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1008,7 +1053,7 @@
         },
         {
           "Label": "time2_1",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1016,7 +1061,7 @@
         },
         {
           "Label": "time2_2",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1024,7 +1069,7 @@
         },
         {
           "Label": "time2_3",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1032,7 +1077,7 @@
         },
         {
           "Label": "time3_1",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1040,7 +1085,7 @@
         },
         {
           "Label": "time3_2",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1048,7 +1093,7 @@
         },
         {
           "Label": "time3_3",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1056,7 +1101,7 @@
         },
         {
           "Label": "time4_1",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1064,7 +1109,7 @@
         },
         {
           "Label": "time4_2",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1072,7 +1117,7 @@
         },
         {
           "Label": "time4_3",
-          "DecodeString": "x = x * 1",
+          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1086,7 +1131,8 @@
       "Version": "0.2"
     }
 
+
   ],
-  "Version": "0.16",
-  "Date": "30/02/2018"
+  "Version": "0.17",
+  "Date": "31/02/2018"
 }
