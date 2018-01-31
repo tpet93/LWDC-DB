@@ -85,6 +85,79 @@
       "commment": "Temperature and Humidity Sensor",
       "version": "0.2"
     },
+    
+    "df702": {
+      "fields": [
+        {
+          "path": "decoded.isfull",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0",
+          "name": "isfull",
+          "short": "full",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.isflame",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0",
+          "name": "isflame",
+          "short": "flame",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.isfall",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0",
+          "name": "isfall",
+          "short": "fall",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.reserved",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0",
+          "name": "reserved",
+          "short": "reserved",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.airmm",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "airmm",
+          "short": "airmm",
+          "unit": "millimeters",
+          "ushort": "mm",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "Dingtek ultrasonic bin sensor",
+      "commment": "Measure distance below device",
+      "version": "0.1"
+    },
     "IOTWeatherStn": {
       "fields": [
         {
