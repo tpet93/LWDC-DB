@@ -1029,7 +1029,7 @@
         },
         {
           "Label": "time1_1",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1037,7 +1037,7 @@
         },
         {
           "Label": "time1_2",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1045,7 +1045,7 @@
         },
         {
           "Label": "time1_3",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1053,7 +1053,7 @@
         },
         {
           "Label": "time2_1",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1061,7 +1061,7 @@
         },
         {
           "Label": "time2_2",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1069,7 +1069,7 @@
         },
         {
           "Label": "time2_3",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1077,7 +1077,7 @@
         },
         {
           "Label": "time3_1",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1085,7 +1085,7 @@
         },
         {
           "Label": "time3_2",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1093,7 +1093,7 @@
         },
         {
           "Label": "time3_3",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1101,7 +1101,7 @@
         },
         {
           "Label": "time4_1",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1109,7 +1109,7 @@
         },
         {
           "Label": "time4_2",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1117,7 +1117,7 @@
         },
         {
           "Label": "time4_3",
-          "DecodeString": "(x>0)? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
+          "DecodeString": "((x>0) && (x<65535))? (x = new Date(msg.payload.recv) - x * 8 * 1000) : (x = 0);",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
@@ -1133,6 +1133,6 @@
 
 
   ],
-  "Version": "0.17",
-  "Date": "31/02/2018"
+  "Version": "0.18",
+  "Date": "09/02/2018"
 }
