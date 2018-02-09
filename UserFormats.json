@@ -81,11 +81,11 @@
           "offset": 0
         }
       ],
-      "label": "TuckerBox Temperature Sensor",
+      "label": "TuckerBox Temperature and Humidity Sensor",
       "commment": "Temperature and Humidity Sensor",
       "version": "0.2"
     },
-    
+
     "df702": {
       "fields": [
         {
@@ -956,7 +956,7 @@
       "commment": "0-1023, low values indicate water",
       "version": "0.2"
     },
-    
+
     "IOTWeatherStn2": {
       "fields": [
         {
@@ -1130,7 +1130,7 @@
         }
       ],
       "label": "IOT Australasia Weather Station",
-      "comment": "Low Power: Temperature, Wind, Rain, Barometer.",
+      "comment": "Low Power: Temperature, Wind, Rain, UV.",
       "version": "0.2"
     },
     "ValveControl_2v": {
@@ -1243,8 +1243,93 @@
       "label": "IOT Australasia Dual actuator control board",
       "comment": "",
       "version": "0.1"
+    },
+    "WE10v01r": {
+      "fields": [
+        {
+          "path": "decoded.temp",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.0",
+          "name": "Temperature",
+          "short": "Temp",
+          "unit": "Degrees Celsius",
+          "ushort": "°C",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.humidity",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0",
+          "name": "Relative Humidity",
+          "short": "Humidity",
+          "unit": "Percent",
+          "ushort": "%",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.crc",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0",
+          "name": "Checksum",
+          "short": "crc",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.msg_id",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
+          "name": "type of message",
+          "short": "id",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.status",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
+          "name": "device status",
+          "short": "status",
+          "unit": "",
+          "ushort": "",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "Wisen Sigfox Temperature and Humidity Sensor",
+      "commment": "Temperature and Humidity Sensor",
+      "version": "0.1"
     }
   },
   "version": "0.12",
-  "date": "23/11/2017"
+  "date": "09/02/2018"
 }
