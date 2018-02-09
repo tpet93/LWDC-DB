@@ -1325,7 +1325,7 @@
           "offset": 0
         }
       ],
-      "label": "Wisen Sigfox Temperature and Humidity Sensor",
+      "label": "Sigfox Temperature and Humidity Sensor",
       "commment": "Temperature and Humidity Sensor",
       "version": "0.1"
     }
