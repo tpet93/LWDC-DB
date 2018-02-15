@@ -1149,28 +1149,20 @@
           "DecimalPlaces": 4
         },
         {
-          "Label": "temp",
-          "DecodeString": "x = ((x * 256.0) / 65536.0) - 127 ",
-          "DataType": "UInt16LE",
-          "DataLength": 2,
-          "IncrementLength": 2,
-          "DecimalPlaces": 3
-        },
-        {
-          "Label": "rfid_serial",
-          "DecodeString": " x =  String(Format.Fields[i-1]  + (x * 4294967296)); x = x.substring(0, 3) +'_' + x.substring(3, 15) ;",
+          "Label": "seriali",
+          "DecodeString": "x =  x  + ((buf.readUInt32LE(i+4) * 4294967296)); s = String(x).substring(0, 3) +'_' + String(x).substring(3, 15) ; Object.defineProperty(newpayload,'serials',{value: s,writable: true,enumerable: true,configurable: true});",
           "DataType": "UInt32LE",
           "DataLength": 4,
           "IncrementLength": 4,
-          "DecimalPlaces": 4
+          "DecimalPlaces": 0
         }
 
       ],
       "Model": "rfiddemo",
       "Version": "0.1"
-    },
+    }
 
   ],
-  "Version": "0.18",
-  "Date": "09/02/2018"
+  "Version": "0.19",
+  "Date": "15/02/2018"
 }
