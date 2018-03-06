@@ -1129,10 +1129,182 @@
       ],
       "Model": "EndRowSensor1_4p_relt",
       "Version": "0.2"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "seriali",
+          "DecodeString": "var buff = Buffer.from(DataMsg.message.substring(DataMsg.ReadPosition,DataMsg.ReadPosition+(4*2)),'hex'); var upper = buff.readUInt32LE(0); x =  x  + (upper * 4294967296); s = String(x).substring(0, 3) +'_' + String(x).substring(3, 15); Object.defineProperty(newpayload,'serials',{value: s,writable: true,enumerable: true,configurable: true});",
+          "DataType": "UInt32LE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 0
+        }
+
+      ],
+      "Model": "rfiddemo",
+      "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "angle",
+          "DecodeString": "x = x * 90 / 256",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 1
+        }
+
+      ],
+      "Model": "troughlevel",
+      "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 16 / 256) + 5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+
+        {
+          "Label": "setting0",
+          "DecodeString": "x = (x & 0x03)",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 closed, 1 open, 3 stop"
+        },
+        {
+          "Label": "setting1",
+          "DecodeString": "x = (x & 0x0C)>>2",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 closed, 1 open, 3 stop"
+
+        },
+        {
+          "Label": "state0",
+          "DecodeString": "x = (x & 0x30)>>4",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 closed, 1 open, 2 middle"
+
+        },
+        {
+          "Label": "state1",
+          "DecodeString": "x = (x & 0xC0)>>6",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0,
+          "_comment":"0 closed, 1 open, 2 middle"
+        },
+        {
+          "Label": "time0",
+          "DecodeString": "x = x",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "time1",
+          "DecodeString": "x = x",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "reading1",
+          "DecodeString": "x = x & ~0xC000",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "event1",
+          "DecodeString": "x = (x & 0xC000) >> 14",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "uid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "status",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        }
+
+
+      ],
+      "Model": "ValveControl_2v2",
+      "Version": "0.1"
     }
 
-
   ],
-  "Version": "0.18",
-  "Date": "09/02/2018"
+  "Version": "0.20",
+  "Date": "6/03/2018"
 }
