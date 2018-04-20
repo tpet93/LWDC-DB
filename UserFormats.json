@@ -1328,9 +1328,8 @@
       "label": "Sigfox Temperature and Humidity Sensor",
       "commment": "Temperature and Humidity Sensor",
       "version": "0.1"
-    }
-  },
-
+    },
+  
       "TBKS10v01r1": {
       "fields": [
         {
@@ -1400,13 +1399,13 @@
         }
       ],
       "label": "Tuckerbox Temp Sensor",
-      "commment": "TempSensor",
+      "comment": "TempSensor",
       "version": "0.1"
-    },
+    }
 
+  },
   
-  
-  
-  "version": "0.12",
-  "date": "09/02/2018"
+  "version": "0.13",
+  "date": "20/04/2018"
 }
+
