@@ -1190,7 +1190,7 @@
         {
           "Label": "state",
           "DecodeString": "x = (x & 0x30) >> 4",
-          "DataType": "UInt16LE",
+          "DataType": "UInt8",
           "DataLength": 1,
           "IncrementLength": 0,
           "DecimalPlaces": 0,
@@ -1199,7 +1199,7 @@
         {
           "Label": "event",
           "DecodeString": "x = (x & 0xC0) >> 6",
-          "DataType": "UInt16LE",
+          "DataType": "UInt8",
           "DataLength": 1,
           "IncrementLength": 1,
           "DecimalPlaces": 0,
