@@ -1186,6 +1186,25 @@
           "DataLength": 1,
           "IncrementLength": 1,
           "DecimalPlaces": 1
+        },
+        {
+          "Label": "state",
+          "DecodeString": "x = (x & 0x30) >> 4",
+          "DataType": "UInt16LE",
+          "DataLength": 1,
+          "IncrementLength": 0,
+          "DecimalPlaces": 0,
+          "_comment":"0 undefined, 1 wet, 2 dry"
+        },
+        {
+          "Label": "event",
+          "DecodeString": "x = (x & 0xC0) >> 6",
+          "DataType": "UInt16LE",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0,
+          "_comment":"0: no change, 1: change to wet(upright), 2: change to dry(sideways)"
+
         }
 
       ],
