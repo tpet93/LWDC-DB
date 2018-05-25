@@ -1343,7 +1343,7 @@
 
         {
           "Label": "heightmm",
-          "DecodeString": "x = x",
+          "DecodeString": "x = x*10",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
