@@ -1345,8 +1345,8 @@
           "Label": "heightmm",
           "DecodeString": "x = x",
           "DataType": "UInt16LE",
-          "DataLength": 1,
-          "IncrementLength": 0,
+          "DataLength": 2,
+          "IncrementLength": 2,
           "DecimalPlaces": 0
         },
         {
@@ -1354,7 +1354,7 @@
           "DecodeString": "x = (x/2.0)-20",
           "DataType": "UInt8",
           "DataLength": 1,
-          "IncrementLength": 0,
+          "IncrementLength": 1,
           "DecimalPlaces": 2
         }
 
