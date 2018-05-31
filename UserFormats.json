@@ -1401,7 +1401,7 @@
       "label": "Tuckerbox Temp Sensor",
       "comment": "TempSensor",
       "version": "0.1"
-    }
+    
 
   },
         "TB10V02ES": {
@@ -1462,7 +1462,8 @@
       "label": "Tuckerbox Temp Sensor",
       "comment": "TempSensor",
       "version": "0.2"
-  },
+	}
+},
   
   "version": "0.14",
   "date": "31/05/2018"
