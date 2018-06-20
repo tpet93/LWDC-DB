@@ -1321,9 +1321,49 @@
       ],
       "Model": "ValveControl_2v2",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 3
+        },
+
+        {
+          "Label": "heightmm",
+          "DecodeString": "x = x*10",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "temp",
+          "DecodeString": "x = (x/2.0)-20",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 2
+        }
+
+      ],
+      "Model": "us_level_1v1",
+      "Version": "0.1"
     }
 
   ],
-  "Version": "0.20",
-  "Date": "6/03/2018"
+  "Version": "0.21",
+  "Date": "25/05/2018"
 }
