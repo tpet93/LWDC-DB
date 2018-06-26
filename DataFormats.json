@@ -1361,6 +1361,103 @@
       ],
       "Model": "us_level_1v1",
       "Version": "0.1"
+    },
+	 {
+            "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+         {
+          "Label": "timestamp",
+          "DecodeString": "x = x",
+          "DataType": "UInt32LE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 1.5 / 256) + 3.0",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "temp",
+          "DecodeString": "x = x",
+          "DataType": "Int8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "lat",
+          "DecodeString": "x = (x /10000000)",
+          "DataType": "Int32LE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 10
+        },        
+        {
+          "Label": "long",
+          "DecodeString": "x = (x /10000000)",
+          "DataType": "Int32LE",
+          "DataLength": 4,
+          "IncrementLength": 4,
+          "DecimalPlaces": 10
+        },
+         {
+          "Label": "altitude",
+          "DecodeString": "x =x",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 4
+        },
+		         {
+          "Label": "speed",
+          "DecodeString": "x =(x/100)/3.6",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 4
+        },       
+		{
+          "Label": "course",
+          "DecodeString": "x =x",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+		 {
+          "Label": "sattcount",
+          "DecodeString": "x = x",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+				 {
+          "Label": "timetofix",
+          "DecodeString": "x = x",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        }
+        
+        
+
+      ],
+      "Model": "rfiddemo",
+      "Version": "0.1"
     }
 
   ],
