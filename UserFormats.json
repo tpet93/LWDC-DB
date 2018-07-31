@@ -1329,7 +1329,7 @@
       "commment": "Temperature and Humidity Sensor",
       "version": "0.1"
     },
-  
+
       "TBKS10v01r1": {
       "fields": [
         {
@@ -1401,11 +1401,42 @@
       "label": "Tuckerbox Temp Sensor",
       "comment": "TempSensor",
       "version": "0.1"
-    }
+    },
+  "IOTFlowGuage": {
+    "fields": [
+      {
+        "path": "decoded.battery",
+        "display": 1,
+        "aggregate": 1,
+        "format": "0.00",
+        "name": "Battery Voltage",
+        "short": "Battery",
+        "unit": "Volts",
+        "ushort": "V",
+        "comment": "",
+        "multiplier": 1,
+        "offset": 0
+      },
+      {
+        "path": "decoded.flowrate",
+        "display": 1,
+        "aggregate": 1,
+        "format": "0.000",
+        "name": "FlowRate",
+        "short": "Flow",
+        "unit": " Pulses per Second",
+        "ushort": "P/s",
+        "comment": "",
+        "multiplier": 1,
+        "offset": 0
+      }
+    ],
+    "label": "universal water flow guage",
+    "commment": "pulse rate and battery of lora device, device may be installed on different models of flow guage, different models may have varing pulses/litre",
+    "version": "0.1"
 
-  },
-  
-  "version": "0.13",
-  "date": "20/04/2018"
+  }
+},
+  "version" : "0.23",
+  "date": "31/07/2018"
 }
-
