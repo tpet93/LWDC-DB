@@ -1458,9 +1458,39 @@
       ],
       "Model": "rfiddemo",
       "Version": "0.1"
+    },
+    {
+      "Fields": [
+        {
+          "Label": "formatid",
+          "DecodeString": "",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 0
+        },
+        {
+          "Label": "battery",
+          "DecodeString": "x = (x * 2 / 256) + 2.5",
+          "DataType": "UInt8",
+          "DataLength": 1,
+          "IncrementLength": 1,
+          "DecimalPlaces": 4
+        },
+        {
+          "Label": "flowratepps",
+          "DecodeString": "x = x /100 ",
+          "DataType": "UInt16LE",
+          "DataLength": 2,
+          "IncrementLength": 2,
+          "DecimalPlaces": 3
+        }
+      ],
+      "Model": "IOTFlowGuage",
+      "Version": "0.1"
     }
 
   ],
-  "Version": "0.21",
-  "Date": "25/05/2018"
+  "Version": "0.22",
+  "Date": "31/07/2018"
 }
