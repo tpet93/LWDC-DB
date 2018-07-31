@@ -1401,6 +1401,7 @@
       "label": "Tuckerbox Temp Sensor",
       "comment": "TempSensor",
       "version": "0.1"
+<<<<<<< HEAD
     },
   "IOTFlowGuage": {
     "fields": [
@@ -1439,4 +1440,72 @@
 },
   "version" : "0.23",
   "date": "31/07/2018"
+=======
+    
+
+  },
+        "TB10V02ES": {
+      "fields": [
+        {
+          "path": "decoded.temp",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.0",
+          "name": "Temperature",
+          "short": "Temp",
+          "unit": "Degrees Celsius",
+          "ushort": "°C",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+        {
+          "path": "decoded.battery",
+          "display": 1,
+          "aggregate": 1,
+          "format": "0.00",
+          "name": "Battery Voltage",
+          "short": "Battery",
+          "unit": "Volts",
+          "ushort": "V",
+          "comment": "",
+          "multiplier": 1,
+          "offset": 0
+        },
+		{
+          "path": "gwdata.rssi",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
+          "name": "Received Signal Strength Indicator",
+          "short": "RSSI",
+          "unit": "dB",
+          "ushort": "dB",
+          "comment": "not valid value",
+          "multiplier": 1,
+          "offset": 0
+        },
+		{
+          "path": "gwdata.snr",
+          "display": 0,
+          "aggregate": 0,
+          "format": "0.0",
+          "name": "Signal-to-noise ratio",
+          "short": "SNR",
+          "unit": "dB",
+          "ushort": "dB",
+          "comment": "not valid value",
+          "multiplier": 1,
+          "offset": 0
+        }
+      ],
+      "label": "Tuckerbox Temp Sensor",
+      "comment": "TempSensor",
+      "version": "0.2"
+	}
+},
+  
+  "version": "0.14",
+  "date": "31/05/2018"
+>>>>>>> master
 }
