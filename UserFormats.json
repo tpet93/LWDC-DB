@@ -1481,7 +1481,7 @@
         "offset": 0
       },
       {
-        "path": "decoded.flowrate",
+        "path": "decoded.flowratepps",
         "display": 1,
         "aggregate": 1,
         "format": "0.000",
