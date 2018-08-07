@@ -1479,7 +1479,7 @@
         },
         {
           "Label": "flowratepps",
-          "DecodeString": "x = x /100 ",
+          "DecodeString": "x = x /1000 ",
           "DataType": "UInt16LE",
           "DataLength": 2,
           "IncrementLength": 2,
